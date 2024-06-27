@@ -1,13 +1,28 @@
-import HomePage from './HomePage.js'
-import './App.css'
+import HomePage from './Components/HomePage.jsx';
+import './App.css';
 
 function App() { 
 
   return (
     <>
-    <h1>Learning React</h1>
-    <p>Para</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Movies</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <main>
     <HomePage />
+    </main>
+    
     </>
   )
 }

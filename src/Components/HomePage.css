@@ -1,0 +1,13 @@
+#watchlist {
+      list-style-type: decimal;
+        background-color: blue;
+        display: inline-block;
+      }
+
+      form > * {
+        margin: .5rem;
+      }
+
+      input, label, button {
+        font-size: 1.2rem;
+      }
