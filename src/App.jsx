@@ -2,6 +2,7 @@ import HomePage from './Components/HomePage.jsx';
 import './App.css';
 
 function App() { 
+  const arr = ["It's reactive", "It's functional", "It's modular"];
 
   return (
     <>
@@ -28,3 +29,4 @@ function App() {
 }
 
 export default App
+
