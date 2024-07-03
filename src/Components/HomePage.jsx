@@ -4,7 +4,7 @@ import "./HomePage.css";
 function HomePage() {
   const [movieTitle, setMovieTitle] = useState("");
   const [list, setList] = useState([]);
-}
+
 
 return (
   <>
@@ -46,5 +46,6 @@ return (
     </ul>
   </>
 );
+}
 
 export default HomePage;
