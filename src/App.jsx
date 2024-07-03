@@ -1,5 +1,6 @@
 import HomePage from './Components/HomePage.jsx';
 import './App.css';
+import FilmsPage from './Components/FilmsPage';
 
 function App() { 
 
@@ -21,6 +22,7 @@ function App() {
     
     <main>
     <HomePage />
+    <FilmsPage />
     </main>
     
     </>

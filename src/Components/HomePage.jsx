@@ -17,7 +17,7 @@ return (
         setName("");
       }}
     >
-      <label HTMLfor="movieInput">Enter Movie to Watch later</label>
+      <label htmlFor="movieInput">Enter Movie to Watch later</label>
       <input
         type="text"
         name="movieInput"
