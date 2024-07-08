@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../App.css";
 function FilmsPage() {
   const [movies, setMovies] = useState([]);
-
+ 
   useEffect(() => {
     fetch("https://studioghibliapi-d6fc8.web.app/films")
       .then((response) => {

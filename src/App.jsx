@@ -1,31 +1,33 @@
-import HomePage from './Components/HomePage.jsx';
+import HomePage from './Pages/home.page.jsx';
 import './App.css';
-import FilmsPage from './Components/FilmsPage';
+import FilmsPage from './Pages/films.page.jsx';
+import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 
 function App() { 
 
   return (
-    <>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Movies</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-      </ul>
-    </nav>
+    <BrowserRouter>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/films">Films</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element ={<HomePage />} />
+        <Route path="films" element ={<FilmsPage />} />
+      </Routes>
+      
+  
     
-    <main>
-    <HomePage />
-    <FilmsPage />
-    </main>
+    </BrowserRouter> 
+  
     
-    </>
+    
   )
 }
 
